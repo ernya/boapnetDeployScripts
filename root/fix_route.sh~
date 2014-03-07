@@ -1,9 +1,9 @@
 #!/bin/bash
 sleep 60
 ip route del default
-ip route add default via xenserver_gateway dev xenbr0
+ip route add default via 62.210.172.1 dev xenbr0
 ifup tun1
-ip route add ip_nfs_openvpn via ip_nfs_via_gre
+ip route add 10.13.42.1 via ip_nfs_via_gre
 iptables_real -F
 iptables_real -F INPUT
 iptables_real -F OUTPUT
