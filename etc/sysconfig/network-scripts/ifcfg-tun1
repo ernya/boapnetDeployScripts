@@ -1,0 +1,7 @@
+DEVICE=tun1
+BOOTPROTO=none
+ONBOOT=no
+TYPE=GRE
+PEER_OUTER_IPADDR=addresse_externe_guenievre
+PEER_INNER_IPADDR=addresse_interne_gre_guenievre
+MY_INNER_IPADDR=addresse_interne_gre_hostname
