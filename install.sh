@@ -12,4 +12,4 @@ sed -i "s/addresse_externe_nfs/$NFS_EXTERNAL_ADDR/g" etc/sysconfig/network-scrip
 sed -i "s/addresse_interne_gre_nfs/$NFS_GRE_ADDR/g" etc/sysconfig/network-scripts/ifcfg-tun1
 sed -i "s/addresse_interne_gre_xenserver/$XENSERVER_GRE_ADDR/g" etc/sysconfig/network-scripts/ifcfg-tun1
 sed -i "s/ip_nfs_via_gre/$NFS_GRE_ADDR/g" root/fix_route.sh
-sed -i "s/sous_reseau_xenserver/$XENSERVER_SUBNET/g" root/fix_route.sh
+sed -i "s/sous-reseau_xenserver/$XENSERVER_SUBNET/g" root/fix_route.sh
