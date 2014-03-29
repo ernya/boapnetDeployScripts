@@ -12,3 +12,4 @@ echo 'openvpn /etc/openvpn/hostname.ovpn > /var/log/ovpn-hostname.log &> /var/lo
 echo '/root/fix_route.sh &' >> /etc/rc.local
 xe -pif-reconfigure-ip DNS=DNS_XEN gateway=GATEWAY_XEN IP=IP_XEN netmask=NETMASK_XEN uuid=UUID_ETH1
 xe-switch-network-backend bridge
+reboot
